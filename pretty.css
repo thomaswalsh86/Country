@@ -1,25 +1,14 @@
-.flexPapa{
+.searchbar{
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
-    
-}
-.flexChildSearch{
-    width:100px;
-    height: 100px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 60px;
     border-radius: 10px;
-    margin:10%
+    border-color: rgb(131, 132, 133);
 }
-.flexChild{
-    width:100px;
-    height: 100px;
+input:hover{
+    color: green;/* add a shadow and change colour or border or somethind*/
+
+}
+.searchbarParent{
     display:flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin:10%
 }

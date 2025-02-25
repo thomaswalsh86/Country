@@ -1,9 +1,10 @@
 function getCountry() {
-    var input = document.getElementById("cInput").value.trim();
+    var input = document.getElementById("input").value.trim();
     
     if (input === "") {
         document.getElementById("cy").innerText = "Please enter a country name.";
         return;
+
     }
     input = input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
 
@@ -23,3 +24,12 @@ function getCountry() {
         console.error("Error fetching country:", error);
     });
 }
+
+
+document.getElementById("input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      getCountry();
+      
+    }
+  });
